@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked Oleh zyyck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    
+      <script type="text/javascript">
+function disableselect(e) {
+return false
+}
+function reEnable() {
+return true
+}
+document.onselectstart = new Function("return false")
+if (window.sidebar) {
+document.onmousedown = disableselect
+document.onclick = reEnable
+}
+var message = "";
+function clickIE() {
+if (document.all) {
+(message);
+return false;
+}
+}
+function clickNS(e) {
+if (document.layers || (document.getElementById && !document.all)) {
+if (e.which == 2 || e.which == 3) {
+(message);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = clickNS;
+} else {
+document.onmouseup = clickNS;
+document.oncontextmenu = clickIE;
+}
+document.oncontextmenu = new Function('alert("Copyright By zyyck"); return false')	
+</script>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* General Styles */
+        body, html {
+            background: #000000;
+            background-image: url('https://i.tonnnp4top.io/p_3241vkj6h2.gif');
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .mainContainer h1 {
+            font-family: 'Ubuntu', sans-serif;
+            padding: 5px 0px 10px 0px;
+            color: #ffffff;
+            text-shadow: 0 0 10px #11d30b;
+        }
+
+        .mainContainer h1:hover {
+            text-shadow: 0 0 14px #0b7e07;
+        }
+
+        .container .teamName {
+            text-transform: uppercase;
+            padding: 10px 0px;
+            letter-spacing: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            color: #0ae7d5;
+            font-size: 17px;
+        }
+
+        .container .teamName span {
+            color: white;
+        }
+
+        .hr {
+            width: 600px;
+            border: 2px solid #292b2983;
+        }
+
+        .logoWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .mainImage {
+            width: 250px;
+            height: 250px;
+            border: 3px solid rgba(14, 167, 14, 0.774);
+            border-radius: 50%;
+            box-shadow: 0px 0px 17px #06d117;
+            object-fit: cover;
+        }
+
+        .mainImage:hover {
+            box-shadow: 0px 0px 19px #0c8a16;
+        }
+
+        .text1 {
+         text-transform: uppercase;
+         font-family: 'Ubuntu', sans-serif;
+         color: #FF1A1A;
+         line-height: 1.6;
+        }
+
+        .textbox {
+            background-color: #97e900;
+            color: #000000;
+            font-size: 17px;
+            border-radius: 20px;
+            padding: 10px 0px;
+            border: none;
+            text-align: center;
+        }
+
+        .text2 {
+            color: #32CD32;
+            font-size: 22px;
+            letter-spacing: 5px;
+            font-family: 'Waterfall', cursive;
+            font-weight: bold;
+        }
+
+        /* Hashtags Styling */
+        .hashtags {
+            color: #97e900;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            margin-top: 15px;
+            text-shadow: 0px 0px 3px #06d117;
+            text-align: center;
+        }
+
+        /* Media Query for Small Screens */
+        @media only screen and (max-width: 500px) {
+            .text1 {
+                padding: 0px 20px;
+                color: #C59B6D; /* Updated to match logo color */
+            }
+
+            .container .teamName {
+                padding: 10px 0px;
+                letter-spacing: 12px;
+                font-size: 14px;
+            }
+
+            .textbox {
+                font-size: 13px;
+                width: 300px;
+            }
+
+            .hr {
+                width: 300px;
+            }
+
+            .text1 {
+                font-size: 17px;
+                letter-spacing: 4px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+            overflow: hidden;
+        }
+
+        #matrix {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .mainContainer {
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .logoWrapper img {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .teamName {
+            color: cyan;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin: 20px 0;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        .text1 {
+            font-size: 1.2rem;
+            color: pink;
+            font-style: italic;
+            margin: 10px 0;
+            text-shadow: 0 0 5px pink;
+        }
+
+        .text2 {
+            font-size: 1.5rem;
+            color: lime;
+            margin: 15px 0;
+            text-shadow: 0 0 5px lime;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-shadow: 0 0 10px red;
+        }
+
+        audio {
+            display: none;
+        }        
+    </style>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="mainContainer">
+        <div class="logoWrapper">
+            <img src="https://a.top4top.io/p_3284gl6gp0.jpg" alt="Dxploit" width="50%"/><br>
+        </div>
+        <div class="container">
+            <h2 class="my name"><span> HACKED BY ZYYCK   </span></h2>
+            <p class="text1"> "tikus adalah binatang paling berani"  </p>
+            <p class="text3"> mereka bahkan menyebut nama tuhan untuk menutupi sebuah kebohongan</p>
+            <p class="text2">BEST FRIENDS</p>
+            <h2 style="color: red;"> </h2>
+        </div>
+    </div>
+
+   <style>
+        #playButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        #playButton:focus {
+            outline: none;
+        }
+
+        #progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: #2196F3;
+            transition: width 0.1s;
+        }
+    </style>
+    <title>Audio Player</title>
+</head>
+<body>
+
+    <button id="playButton">Play</button>
+    <audio id="audio" src="https://i.top4top.io/m_3265izhq90.mp4"></audio>
+    <div id="progress"></div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const playButton = document.getElementById('playButton');
+        const progress = document.getElementById('progress');
+
+        playButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = 'Pause';
+            } else {
+                audio.pause();
+                playButton.textContent = 'Play';
+            }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            const progressWidth = (audio.currentTime / audio.duration) * 100;
+            progress.style.width = progressWidth + '%';
+        });
+    </script>
+</body>
+
+</html>
